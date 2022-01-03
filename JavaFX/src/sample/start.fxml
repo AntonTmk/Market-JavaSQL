@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Start">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#56adff" height="114.0" stroke="#2ee3ff" strokeType="INSIDE" width="600.0" />
+            <Text fill="WHITE" layoutX="7.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Електронний журнал" wrappingWidth="240.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="exit" layoutX="501.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Вихід" />
+            <Button fx:id="adnew" layoutX="321.0" layoutY="127.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="227.0" text="додати студентів" />
+            <TableView fx:id="view" layoutX="27.0" layoutY="127.0" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="127.0" text="П.І.Б." />
+                <TableColumn fx:id="pro" prefWidth="72.0" text="Пропуски" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
